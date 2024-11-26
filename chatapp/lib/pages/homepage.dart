@@ -1,24 +1,53 @@
 import 'package:flutter/material.dart';
-import 'package:chatapp/main.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
 
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
+class Homepage extends StatefulWidget {
+ const Homepage({super.key});
+
+
+ @override
+ State<Homepage> createState() => _HomepageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    double deviceHeight = MediaQuery.of(context).size.height;
-    double deviceWidth = MediaQuery.of(context).size.width;
-    return SafeArea(
-      child: Text(data))
-    return const Placeholder();
-  }
-}
 
-Widget bottomButtons(){
-  return Column()
+class _HomepageState extends State<Homepage> {
+ @override
+ Widget build(BuildContext context) {
+   double _deviceHeight = MediaQuery.of(context).size.height;
+   double _deviceWidth = MediaQuery.of(context).size.width;
+   return SafeArea(
+     child: Scaffold(
+       appBar: AppBar(
+         backgroundColor: Colors.yellow,
+         title: const Center(
+           child: Text(
+             "Chat App",
+             style: TextStyle(color: Colors.black38),
+           ),
+         ),
+       ),
+       body: Column(
+         children: [],
+       ),
+     ),
+   );
+ }
+
+
+ Widget circularWaves() {
+   return Container(
+     color: Colors.green,
+   );
+ }
+
+
+
+
+ Widget bottomButtons() {
+   return Column(
+    
+   );
+ }
+
+
 }
