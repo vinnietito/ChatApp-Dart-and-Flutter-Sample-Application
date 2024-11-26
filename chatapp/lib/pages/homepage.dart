@@ -18,3 +18,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return const Placeholder();
   }
 }
+
+Widget bottomButtons(){
+  return Column()
+}
